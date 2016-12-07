@@ -23,6 +23,12 @@ Example
 	));
 ```
 
+.. code-block:: html
+    :linenos:
+
+   <h1>code block example</h1>
+   
+
 
 Version 1.0.5
 -------------
