@@ -9,6 +9,8 @@ Version 1.0.6
 -------------
 * return default key if localization cannot be found support
 
+.. highlight:: csharp
+
 Example::
 
 	var useTypeFullNames = true;
@@ -20,11 +22,6 @@ Example::
 	  useOnlyPropertyNames, 
 	  returnOnlyKeyIfNotFound
 	));
-
-Install the package with pip::
-
-    $ pip install read-the-docs-template
-
 
 
 Version 1.0.5
