@@ -11,7 +11,7 @@ Version 1.0.6
 
 Example
 
-.. code-block:: c#
+.. code-block:: guess
 	var useTypeFullNames = true;
 	var useOnlyPropertyNames = false;
 	var returnOnlyKeyIfNotFound = true;
