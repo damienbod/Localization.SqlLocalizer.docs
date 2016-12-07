@@ -17,11 +17,8 @@ Select your EfCore provider and also add to the project.json file::
 
 	"dependencies": {  
         "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": "1.1.0",
-        "Microsoft.EntityFrameworkCore.SqlServer": "1.1.0",
-        "Microsoft.EntityFrameworkCore.SqlServer.Design": {
-            "version": "1.1.0",
-            "type": "build"
-        },
+        "Microsoft.EntityFrameworkCore.Sqlite": "1.1.0",
+        "Microsoft.EntityFrameworkCore.Sqlite.Design": "1.1.0",
 		...
 	
 	"tools": {
