@@ -1,2 +1,2 @@
-AST.NET Core 
-EF Core
+twill
+django
