@@ -11,8 +11,7 @@ Version 1.0.6
 
 Example
 
-.. code-block:: java
- :linenos:
+```
 	var useTypeFullNames = true;
 	var useOnlyPropertyNames = false;
 	var returnOnlyKeyIfNotFound = true;
@@ -22,6 +21,7 @@ Example
 	  useOnlyPropertyNames, 
 	  returnOnlyKeyIfNotFound
 	));
+```
 
 
 Version 1.0.5
