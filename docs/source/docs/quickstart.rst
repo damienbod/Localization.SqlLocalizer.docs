@@ -12,7 +12,7 @@ Quickstart
         "Localization.SqlLocalizer": "1.0.6",
 		...
 		
-# Select your EfCore provider and also add to the project.json file
+* Select your EfCore provider and also add to the project.json file
 
 ::
 
@@ -34,7 +34,7 @@ See EfCore for more details on installing updating a provider
 
 https://blogs.msdn.microsoft.com/dotnet/2016/11/16/announcing-entity-framework-core-1-1/
 
-# Add the configuration to the Startup:
+* Add the configuration to the Startup:
 
 ::
 	public void ConfigureServices(IServiceCollection services)
@@ -81,6 +81,9 @@ https://blogs.msdn.microsoft.com/dotnet/2016/11/16/announcing-entity-framework-c
 				});
 	}
 
+
+* And also the Configure method in the Startup.cs 
+	
 ::
 
 	public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
@@ -97,7 +100,7 @@ https://blogs.msdn.microsoft.com/dotnet/2016/11/16/announcing-entity-framework-c
 	}
 	
 	
-# Use migrations to create the database if required:
+* Use migrations to create the database if required:
 
 ::
 
@@ -106,7 +109,7 @@ https://blogs.msdn.microsoft.com/dotnet/2016/11/16/announcing-entity-framework-c
 	dotnet ef database update Localization --context LocalizationModelContext
 
 	
-# Use like the standard localization.
+* Use like the standard localization.
 
 ::
 
