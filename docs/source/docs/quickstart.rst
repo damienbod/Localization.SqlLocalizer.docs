@@ -1,7 +1,7 @@
 Quickstart
 =======================================
 
-# Download the package from NuGet and add it to your project.json file.
+Download the package from NuGet and add it to your project.json file.
 
 .. highlight:: csharp
 
