@@ -1,4 +1,4 @@
-Welcome to Django Kong's documentation!
+Localization.SqlLocalizer, SQL Localization for ASP.NET Core
 =======================================
 
 A simple example
@@ -6,7 +6,16 @@ A simple example
 
 You can see a `basic version <http://golem.ericholscher.com/kong/>`_ running for my personal site. It is super barebones, but it should give you an idea of what exactly is possible.
 
-Tests are written using  `Twill <http://twill.idyll.org/commands.html>`_, which allows for easy functional testing of web apps.
+
+<a href="https://www.nuget.org/packages/Localization.SqlLocalizer/">NuGet</a> | <a href="https://github.com/damienbod/AspNet5Localization/issues">Issues</a> | <a href="https://github.com/damienbod/AspNet5Localization/tree/master/AspNet5Localization/src/Localization.SqlLocalizer">Code</a>
+
+Examples:
+
+https://github.com/damienbod/AspNet5Localization/tree/master/AspNet5Localization/src/AspNet5Localization
+
+https://github.com/damienbod/Angular2LocalizationAspNetCore
+
+https://damienbod.com/2016/07/15/import-export-asp-net-core-localized-data-as-csv/
 
 Get the code
 -------------
