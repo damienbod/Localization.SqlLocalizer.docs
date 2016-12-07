@@ -27,6 +27,7 @@ Contents
    overview
    meta
    roadmap
+   releases
 
 
 Features
