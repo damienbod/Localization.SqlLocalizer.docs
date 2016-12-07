@@ -28,7 +28,8 @@ Select your EfCore provider and also add to the project.json file::
         "Microsoft.EntityFrameworkCore.Tools.DotNet": "1.1.0-preview4",
 		...
     },
-	
+
+
 See EfCore for more details on installing updating a provider
 
 https://blogs.msdn.microsoft.com/dotnet/2016/11/16/announcing-entity-framework-core-1-1/
@@ -81,6 +82,7 @@ Add the configuration to the Startup::
 				});
 	}
 
+
 .. highlight:: csharp
 
 And also the Configure method in the Startup.cs::
@@ -98,7 +100,7 @@ And also the Configure method in the Startup.cs::
 		app.UseMvc();
 	}
 	
-	
+
 .. highlight:: csharp
 
 Use migrations to create the database if required::
@@ -107,32 +109,33 @@ Use migrations to create the database if required::
  
 	dotnet ef database update Localization --context LocalizationModelContext
 
-.. highlight:: csharp
 	
+.. highlight:: csharp
+
 Use like the standard localization::
 
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Localization;
- 
-namespace AspNet5Localization.Controllers
-{
-    [Route("api/[controller]")]
-    public class AboutController : Controller
-    {
-        private readonly IStringLocalizer<SharedResource> _localizer;
-        private readonly IStringLocalizer<AboutController> _aboutLocalizerizer;
- 
-        public AboutController(IStringLocalizer<SharedResource> localizer, IStringLocalizer<AboutController> aboutLocalizerizer)
-        {
-            _localizer = localizer;
-            _aboutLocalizerizer = aboutLocalizerizer;
-        }
- 
-        [HttpGet]
-        public string Get()
-        {
-            // _localizer["Name"] 
-            return _aboutLocalizerizer["AboutTitle"];
-        }
-    }
-}
+	using Microsoft.AspNetCore.Mvc;
+	using Microsoft.Extensions.Localization;
+	 
+	namespace AspNet5Localization.Controllers
+	{
+		[Route("api/[controller]")]
+		public class AboutController : Controller
+		{
+			private readonly IStringLocalizer<SharedResource> _localizer;
+			private readonly IStringLocalizer<AboutController> _aboutLocalizerizer;
+	 
+			public AboutController(IStringLocalizer<SharedResource> localizer, IStringLocalizer<AboutController> aboutLocalizerizer)
+			{
+				_localizer = localizer;
+				_aboutLocalizerizer = aboutLocalizerizer;
+			}
+	 
+			[HttpGet]
+			public string Get()
+			{
+				// _localizer["Name"] 
+				return _aboutLocalizerizer["AboutTitle"];
+			}
+		}
+	}
