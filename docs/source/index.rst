@@ -21,14 +21,8 @@ Contents
    :maxdepth: 2
    :glob:
 
-   install
-   management_commands
-   settings
    overview
-   meta
-   roadmap
    releases
-
 
 Features
 ----------------------
