@@ -1,24 +1,24 @@
 from distutils.core import setup
 
 setup(
-    name = "django-kong",
-    version = "0.9",
+    name = "Localization.SqlLocalizer ",
+    version = "1.0",
     packages = [
-        "kong",
-        "kong.management",
-        "kong.management.commands",
-        "kong.templatetags",
-        "kong.tests",
+        "sqllocalizer",
+        "sqllocalizer.management",
+        "sqllocalizer.management.commands",
+        "sqllocalizer.templatetags",
+        "sqllocalizer.tests",
     ],
-    author = "Eric Holscher",
-    author_email = "eric@ericholscher.com",
-    description = "A server description and deployment testing tool for King Kong sized sites",
-    url = "http://github.com/ericholscher/django-kong/tree/master",
+    author = "Damien Bowden",
+    author_email = "damien_bod@hotmail.com",
+    description = "SQL localization for ASP.NET Core",
+    url = "https://github.com/damienbod/AspNet5Localization",
     package_data = {
-        'kong': [
+        'sqllocalizer': [
             'templates/*.html',
-            'templates/kong/*.html',
-            'templates/kong/*.txt',
+            'templates/sqllocalizer/*.html',
+            'templates/sqllocalizer/*.txt',
             'fixtures/*.json',
 
         ],
