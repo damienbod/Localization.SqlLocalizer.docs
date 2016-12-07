@@ -9,9 +9,8 @@ Version 1.0.6
 -------------
 * return default key if localization cannot be found support
 
-Example
+Example::
 
-```
 	var useTypeFullNames = true;
 	var useOnlyPropertyNames = false;
 	var returnOnlyKeyIfNotFound = true;
@@ -21,13 +20,11 @@ Example
 	  useOnlyPropertyNames, 
 	  returnOnlyKeyIfNotFound
 	));
-```
 
-.. code-block:: html
-    :linenos:
+Install the package with pip::
 
-   <h1>code block example</h1>
-   
+    $ pip install read-the-docs-template
+
 
 
 Version 1.0.5
