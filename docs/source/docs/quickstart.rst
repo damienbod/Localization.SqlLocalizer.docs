@@ -5,16 +5,15 @@ Quickstart
 
 .. highlight:: csharp
 
-
 ::
 
 	"dependencies": {  
         "Localization.SqlLocalizer": "1.0.6",
 		...
-		
-* Select your EfCore provider and also add to the project.json file
 
-::
+.. highlight:: csharp
+		
+Select your EfCore provider and also add to the project.json file::
 
 	"dependencies": {  
         "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": "1.1.0",
@@ -34,9 +33,10 @@ See EfCore for more details on installing updating a provider
 
 https://blogs.msdn.microsoft.com/dotnet/2016/11/16/announcing-entity-framework-core-1-1/
 
-* Add the configuration to the Startup:
+.. highlight:: csharp
 
-::
+Add the configuration to the Startup::
+
 	public void ConfigureServices(IServiceCollection services)
 	{
 		// init database for localization
@@ -81,10 +81,9 @@ https://blogs.msdn.microsoft.com/dotnet/2016/11/16/announcing-entity-framework-c
 				});
 	}
 
+.. highlight:: csharp
 
-* And also the Configure method in the Startup.cs 
-	
-::
+And also the Configure method in the Startup.cs::
 
 	public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
 	{
@@ -100,18 +99,17 @@ https://blogs.msdn.microsoft.com/dotnet/2016/11/16/announcing-entity-framework-c
 	}
 	
 	
-* Use migrations to create the database if required:
+.. highlight:: csharp
 
-::
+Use migrations to create the database if required::
 
 	dotnet ef migrations add Localization --context LocalizationModelContext
  
 	dotnet ef database update Localization --context LocalizationModelContext
 
+.. highlight:: csharp
 	
-* Use like the standard localization.
-
-::
+Use like the standard localization::
 
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Localization;
