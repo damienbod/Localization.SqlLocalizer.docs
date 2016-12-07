@@ -30,14 +30,12 @@ Contents
 Features
 ----------------------
 
-<ul>
-	<li>Supports any EFCore persistence</li>
-	<li>Import, export</li>
-	<li>Cache, reset cache</li>	
-	<li>support for live update</li>
-	<li>Configurable keys for localization records</li>
-	<li>Default key display possible, if no localization available</li>
-	<li>KISS</li>
-</ul>
+* Supports any EFCore persistence
+* Import, export
+* Cache, reset cache	
+* support for live update
+* Configurable keys for localization records
+* Default key display possible, if no localization available
+* KISS
 
 
