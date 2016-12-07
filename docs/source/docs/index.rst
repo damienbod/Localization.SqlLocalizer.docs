@@ -12,7 +12,10 @@ SQL Localization for ASP.NET Core
    overview
    quickstart
    configuration
-   releases
-   examples
    importexport
+   cachereset
+   examples
+   releases
+   
+   
 
