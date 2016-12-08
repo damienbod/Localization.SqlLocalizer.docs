@@ -10,9 +10,9 @@ The UpdatetLocalizationData and the AddNewLocalizationData methods of the IStrin
 
 ::
 
-	public interface IStringExtendedLocalizerFactory : IStringLocalizerFactory
+    public interface IStringExtendedLocalizerFactory : IStringLocalizerFactory
     {
-		IList GetImportHistory();
+        IList GetImportHistory();
 
         IList GetExportHistory();
 
