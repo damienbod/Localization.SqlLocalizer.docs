@@ -15,7 +15,7 @@ Download the package from NuGet and add it to your project.json file.
 		
 Select your EfCore provider and also add to the project.json file::
 
-	"dependencies": {  
+"dependencies": {  
           "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": "1.1.0",
           "Microsoft.EntityFrameworkCore.Sqlite": "1.1.0",
           "Microsoft.EntityFrameworkCore.Sqlite.Design": "1.1.0",
@@ -24,7 +24,7 @@ Select your EfCore provider and also add to the project.json file::
 	"tools": {
           "Microsoft.EntityFrameworkCore.Tools.DotNet": "1.1.0-preview4",
 		...
-    },
+	},
 
 
 See EfCore for more details on installing updating a provider
