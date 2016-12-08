@@ -43,7 +43,7 @@ Uses the FullName of the class type to create the key::
 	services.AddSqlLocalization(options => options.UseTypeFullNames = true);
 
 
-Using Only property names
+Using only property names
 -----------------------
 
 .. highlight:: csharp
