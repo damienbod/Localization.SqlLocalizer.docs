@@ -30,7 +30,8 @@ When using the Localization.SqlLocalizer package, the IStringExtendedLocalizerFa
 .. highlight:: csharp
 
 Example using the interface::
-	[Route("api/ImportExport")]
+
+    [Route("api/ImportExport")]
     public class ImportExportController : Controller
     {
         private IStringExtendedLocalizerFactory _stringExtendedLocalizerFactory;
