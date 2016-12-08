@@ -14,6 +14,7 @@ SQL Localization for ASP.NET Core
    configuration
    importexport
    cachereset
+   istringextendedlocalizerfactory
    examples
    releases
    
