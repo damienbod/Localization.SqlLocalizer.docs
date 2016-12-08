@@ -1,6 +1,8 @@
 Configuration 
 =======================================
 
+The following configurations can be set in the ConfigureServices method in the Startup.cs file.
+
 .. highlight:: csharp
 
 The LocalizationModelContext needs to be added to the services. You need to then decide which database is to be used. Because the context is in a separate assembly, if you are using migrations, you need to define the MigrationsAssembly propety.
