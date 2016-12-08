@@ -4,6 +4,7 @@ Localization.SqlLocalizer
 SQL Localization for ASP.NET Core, supports all EFCore providers.
 -----------------
 
+Pull requests welcome!
 
 .. toctree::
    :maxdepth: 2
