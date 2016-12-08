@@ -1,7 +1,7 @@
 Localization.SqlLocalizer
 =======================================
 
-SQL Localization for ASP.NET Core
+SQL Localization for ASP.NET Core, supports all EFCore providers.
 -----------------
 
 
