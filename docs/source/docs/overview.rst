@@ -14,13 +14,16 @@ Features
 * KISS
 
 NuGet package
+-------------
 
 https://www.nuget.org/packages/Localization.SqlLocalizer/
 
 Source code
+-----------
 
 https://github.com/damienbod/AspNet5Localization/tree/master/AspNet5Localization/src/Localization.SqlLocalizer
 
 Issues
+------
 
 https://github.com/damienbod/AspNet5Localization/issues
