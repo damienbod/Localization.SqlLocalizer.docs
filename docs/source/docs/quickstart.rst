@@ -11,11 +11,11 @@ Download the package from NuGet and add it to your project.json file.
           "Localization.SqlLocalizer": "1.0.6",
 		...
 
-.. highlight:: csharp
+.. highlight:: javascript
 		
 Select your EfCore provider and also add to the project.json file::
 
-"dependencies": {  
+	"dependencies": {  
           "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": "1.1.0",
           "Microsoft.EntityFrameworkCore.Sqlite": "1.1.0",
           "Microsoft.EntityFrameworkCore.Sqlite.Design": "1.1.0",
