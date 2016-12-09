@@ -16,3 +16,7 @@ https://damienbod.com/2016/07/15/import-export-asp-net-core-localized-data-as-cs
 Offical docs from Microsoft: Globalization and localization
 
 https://docs.microsoft.com/en-us/aspnet/core/fundamentals/localization
+
+EF Core Providers
+
+https://docs.microsoft.com/en-us/ef/core/providers/
