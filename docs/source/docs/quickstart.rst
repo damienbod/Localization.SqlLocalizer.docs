@@ -13,7 +13,7 @@ Download the package from NuGet and add it to your project.json file.
 
 .. highlight:: javascript
 		
-Select your EfCore provider and also add to the project.json file::
+Select your Entity Framework Core (EF Core) provider and also add to the project.json file::
 
 	"dependencies": {  
           "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": "1.1.0",
@@ -27,7 +27,7 @@ Select your EfCore provider and also add to the project.json file::
 	},
 
 
-See EfCore for more details on installing updating a provider
+See EF Core for more details on installing updating a provider
 
 https://blogs.msdn.microsoft.com/dotnet/2016/11/16/announcing-entity-framework-core-1-1/
 
