@@ -5,7 +5,7 @@ Simple SQL Localization NuGet package which can be used with ASP.NET Core and an
 Features
 -----------
 
-* Supports any EFCore persistence
+* Supports any Entity Framework Core (EF Core) persistence
 * Import, export
 * Cache, reset cache	
 * support for live update
