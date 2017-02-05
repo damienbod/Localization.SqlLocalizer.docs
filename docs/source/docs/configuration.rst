@@ -71,3 +71,19 @@ Display default keys when localization is undefined::
 	  useOnlyPropertyNames, 
 	  returnOnlyKeyIfNotFound
 	));
+
+Setting the schema
+-----------------------
+
+.. highlight:: csharp
+
+Set the SQL setting for the localization::
+
+	services.AddLocalizationSqlSchema("translations");
+	services.AddDbContext<LocalizationModelContext>(options =>
+		options.UseSqlite(
+			sqlConnectionString,
+			b => b.MigrationsAssembly("AspNet5Localization")
+		)
+	);
+
