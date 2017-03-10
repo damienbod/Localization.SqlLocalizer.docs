@@ -4,6 +4,15 @@ Release History
 .. note::
     Current Version using ASP.NET Core 1.1, EFCore 1.1
 
+Version 1.0.9
+-------------
+
+* Updating to VS2017 and csproj, .NET 1.1.1
+
+Version 1.0.7
+-------------
+
+* Support for SQL schemas
 
 Version 1.0.6
 -------------
