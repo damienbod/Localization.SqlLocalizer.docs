@@ -8,7 +8,7 @@ Release History
 Version 1.0.10
 -------------
 
-* Support for automaically added undefined resources as ong as the culture is supported
+* Automatically add undefined resources for development
 * Support for net461
 
 Version 1.0.9
