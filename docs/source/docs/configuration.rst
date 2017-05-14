@@ -100,16 +100,18 @@ Add when undefined::
 		}
 	}
 	
-	var useTypeFullNames = false;
-	var useOnlyPropertyNames = false;
-	var returnOnlyKeyIfNotFound = false;
+	public void ConfigureServices(IServiceCollection services)
+    {
+		var useTypeFullNames = false;
+		var useOnlyPropertyNames = false;
+		var returnOnlyKeyIfNotFound = false;
 
 
-	services.AddSqlLocalization(options => options.UseSettings(
-		useTypeFullNames, 
-		useOnlyPropertyNames, 
-		returnOnlyKeyIfNotFound,
-		_createNewRecordWhenLocalisedStringDoesNotExist));
+		services.AddSqlLocalization(options => options.UseSettings(
+			useTypeFullNames, 
+			useOnlyPropertyNames, 
+			returnOnlyKeyIfNotFound,
+			_createNewRecordWhenLocalisedStringDoesNotExist));
 
 	
 
