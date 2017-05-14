@@ -5,7 +5,7 @@ ASP.NET Core Localization example
 
 https://github.com/damienbod/AspNetCoreLocalization/tree/master/src/AspNetCoreLocalization
 
-Angular2 Localization with ASP.NET Core
+Angular Localization with ASP.NET Core
 
 https://github.com/damienbod/Angular2LocalizationAspNetCore
 
