@@ -80,34 +80,34 @@ Development add resources automatically if not found
 
 Add when undefined::
 
-private bool _createNewRecordWhenLocalisedStringDoesNotExist = false;
+	private bool _createNewRecordWhenLocalisedStringDoesNotExist = false;
 
-public Startup(IHostingEnvironment env)
-{
-	var builder = new ConfigurationBuilder()
-		.SetBasePath(env.ContentRootPath)
-		.AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
-		.AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true);
-
-	builder.AddEnvironmentVariables();
-	Configuration = builder.Build();
-
-	if (env.IsDevelopment())
+	public Startup(IHostingEnvironment env)
 	{
-		_createNewRecordWhenLocalisedStringDoesNotExist = true;
+		var builder = new ConfigurationBuilder()
+			.SetBasePath(env.ContentRootPath)
+			.AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
+			.AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true);
+
+		builder.AddEnvironmentVariables();
+		Configuration = builder.Build();
+
+		if (env.IsDevelopment())
+		{
+			_createNewRecordWhenLocalisedStringDoesNotExist = true;
+		}
 	}
-}
+	
+	var useTypeFullNames = false;
+	var useOnlyPropertyNames = false;
+	var returnOnlyKeyIfNotFound = false;
 
-var useTypeFullNames = false;
-var useOnlyPropertyNames = false;
-var returnOnlyKeyIfNotFound = false;
 
-
-services.AddSqlLocalization(options => options.UseSettings(
-	useTypeFullNames, 
-	useOnlyPropertyNames, 
-	returnOnlyKeyIfNotFound,
-	_createNewRecordWhenLocalisedStringDoesNotExist));
+	services.AddSqlLocalization(options => options.UseSettings(
+		useTypeFullNames, 
+		useOnlyPropertyNames, 
+		returnOnlyKeyIfNotFound,
+		_createNewRecordWhenLocalisedStringDoesNotExist));
 
 	
 
