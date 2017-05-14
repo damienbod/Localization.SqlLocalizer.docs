@@ -4,7 +4,8 @@ Release History
 .. note::
     Current Version using ASP.NET Core 1.1, EFCore 1.1
 
-	Version 1.0.10
+	
+Version 1.0.10
 -------------
 
 * Support for automaically added undefined resources as ong as the culture is supported
