@@ -101,11 +101,10 @@ Add when undefined::
 	}
 	
 	public void ConfigureServices(IServiceCollection services)
-    {
+	{
 		var useTypeFullNames = false;
 		var useOnlyPropertyNames = false;
 		var returnOnlyKeyIfNotFound = false;
-
 
 		services.AddSqlLocalization(options => options.UseSettings(
 			useTypeFullNames, 
