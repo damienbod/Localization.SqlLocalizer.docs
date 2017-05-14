@@ -76,6 +76,8 @@ Display default keys when localization is undefined::
 Development add resources automatically if not found
 -----------------------
 
+You should only use this feature in development. The env.IsDevelopment() method provides a good way to configure this.
+
 .. highlight:: csharp
 
 Add when undefined::
