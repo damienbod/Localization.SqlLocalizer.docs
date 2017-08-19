@@ -2,9 +2,14 @@ Release History
 ============
 
 .. note::
-    Current Version using ASP.NET Core 1.1, EFCore 1.1
+    Current Version using ASP.NET Core 2.0, EFCore 2.0
 
 	
+Version 2.0.0
+-------------
+
+* Support for ASP.NET Core 2.0
+
 Version 1.0.10
 -------------
 
