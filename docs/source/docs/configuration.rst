@@ -18,7 +18,9 @@ ConfigureServices in the Startup.cs::
 			options.UseSqlite(
 				sqlConnectionString,
 				b => b.MigrationsAssembly("Angular2LocalizationAspNetCore")
-			)
+			),
+			ServiceLifetime.Singleton,
+			ServiceLifetime.Singleton
 		);
 
 		// Requires that LocalizationModelContext is defined
