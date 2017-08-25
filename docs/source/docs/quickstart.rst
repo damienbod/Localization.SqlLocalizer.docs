@@ -3,33 +3,36 @@ Quickstart
 
 Download the package from NuGet and add it to your project.json file.
 
-.. highlight:: csharp
+.. highlight:: xml
 
 ::
 
-	"dependencies": {  
-          "Localization.SqlLocalizer": "1.0.6",
-		...
-
-.. highlight:: javascript
-		
-Select your Entity Framework Core (EF Core) provider and also add to the project.json file::
-
-	"dependencies": {  
-          "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": "1.1.0",
-          "Microsoft.EntityFrameworkCore.Sqlite": "1.1.0",
-          "Microsoft.EntityFrameworkCore.Sqlite.Design": "1.1.0",
-		...
-	
-	"tools": {
-          "Microsoft.EntityFrameworkCore.Tools.DotNet": "1.1.0-preview4",
-		...
-	},
+	<Project Sdk="Microsoft.NET.Sdk.Web">
+	  <PropertyGroup>
+		<TargetFramework>netcoreapp2.0</TargetFramework>
+	  </PropertyGroup>
+	  <ItemGroup>
+		<PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.0" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="2.0.0" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.0.0" />
+		<PackageReference Include="Localization.SqlLocalizer" Version="2.0.1" />
+	  </ItemGroup>
+	  <ItemGroup>
+		<DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="2.0.0" />
+		<DotNetCliToolReference Include="Microsoft.Extensions.SecretManager.Tools" Version="2.0.0" />
+		<DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.0" />
+	  </ItemGroup>
+	  <ItemGroup>
+		<Folder Include="Migrations\" />
+	  </ItemGroup>
+	  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+		<DefineConstants>$(DefineConstants);RELEASE</DefineConstants>
+	  </PropertyGroup>
+	</Project>
 
 
 See EF Core for more details on installing updating a provider
 
-https://blogs.msdn.microsoft.com/dotnet/2016/11/16/announcing-entity-framework-core-1-1/
 
 .. highlight:: csharp
 
@@ -42,9 +45,11 @@ Add the configuration to the Startup::
 
 		services.AddDbContext<LocalizationModelContext>(options =>
 			options.UseSqlite(
-				sqlConnectionString, 
-				b => b.MigrationsAssembly("AspNet5Localization")
-			)
+				sqlConnectionString,
+				b => b.MigrationsAssembly("Angular2LocalizationAspNetCore")
+			),
+			ServiceLifetime.Singleton,
+			ServiceLifetime.Singleton
 		);
 
 		var useTypeFullNames = true;
