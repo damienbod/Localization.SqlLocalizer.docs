@@ -4,6 +4,12 @@ Release History
 .. note::
     Current Version using ASP.NET Core 2.0, EFCore 2.0
 
+Version 2.0.2
+-------------
+
+* bug fix reset cache
+* development mode, add, update item
+
 
 Version 2.0.1
 -------------
